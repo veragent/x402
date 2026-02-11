@@ -1,4 +1,4 @@
-Veragent — Verifiable AI Agents over HTTP
+## Veragent — Verifiable AI Agents over HTTP
 
 > No accounts. No API keys. No subscriptions.
 
