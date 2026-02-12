@@ -1,0 +1,32 @@
+specVersion: 0.0.5
+schema:
+file: ./schema.graphql
+
+# Replace CONTRACT_ADDRESS
+# Replace START_BLOCK
+
+dataSources:
+- kind: ethereum
+name: VeragentRegistry
+network: base-sepolia
+source:
+address: "CONTRACT_ADDRESS"
+abi: VeragentRegistry
+startBlock: START_BLOCK
+mapping:
+kind: ethereum/events
+apiVersion: 0.0.7
+language: wasm/assemblyscript
+entities:
+- Agent
+abis:
+- name: VeragentRegistry
+file: ./abis/VeragentRegistry.json
+eventHandlers:
+- event: AgentRegistered(bytes32,address,string)
+handler: handleAgentRegistered
+- event: MetadataUpdated(bytes32,string)
+handler: handleMetadataUpdated
+- event: AgentDeactivated(bytes32)
+handler: handleAgentDeactivated
+file: ./src/mapping.ts
