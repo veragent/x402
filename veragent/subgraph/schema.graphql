@@ -1,0 +1,8 @@
+entity Agent @entity {
+id: ID! # bytes32 agentId
+owner: Bytes!
+metadataURI: String!
+active: Boolean!
+createdAt: BigInt!
+updatedAt: BigInt!
+}
