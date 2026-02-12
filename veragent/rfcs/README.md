@@ -7,4 +7,3 @@
 6. [RFC-0006: Agent Reputation & Scoring](./Rfc-0006-agent-reputation-scoring.md)
 7. [RFC-0007: Agent Marketplace & Discovery Standard](./Rfc-0007-agent-marketplace-discovery.md)
 8. [RFC-0008: On-chain Registry & Contract Specification](./Rfc-0008-onchain-registry-contract-spec.md)
-9. [Veragent Whitepaper v0.1](./Veragent-whitepaper-v0.1.md)
